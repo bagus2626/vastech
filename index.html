@@ -49,34 +49,36 @@
     >
       <nav>
         <ul class="tc _o sf yo cg ep">
-          <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-          <li><a href="index.html#features" class="xl">Features</a></li>
-          <li class="c i" x-data="{ dropdown: false }">
-            <a
-              href="#"
-              class="xl tc wf yf bg"
-              @click.prevent="dropdown = !dropdown"
-              :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
-            >
-              Pages
+          <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Beranda</a></li>
+          <li><a href="index.html#features" class="xl">Fitur</a></li>
+          <li><a href="index.html#portofolio" class="xl">portofolio</a></li>
+          <li><a href="index.html#harga" class="xl">Harga</a></li>
+<!--          <li class="c i" x-data="{ dropdown: false }">-->
+<!--            <a-->
+<!--              href="#"-->
+<!--              class="xl tc wf yf bg"-->
+<!--              @click.prevent="dropdown = !dropdown"-->
+<!--              :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"-->
+<!--            >-->
+<!--              Pages-->
 
-              <svg
-              :class="{ 'wh': dropdown }"
-              class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-              </svg>
-            </a>
+<!--              <svg-->
+<!--              :class="{ 'wh': dropdown }"-->
+<!--              class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">-->
+<!--                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />-->
+<!--              </svg>-->
+<!--            </a>-->
 
-            <!-- Dropdown Start -->
-<!--            <ul class="a" :class="{ 'tc': dropdown }">-->
-<!--              <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>-->
-<!--              <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>-->
-<!--              <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>-->
-<!--              <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>-->
-<!--              <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>-->
-<!--            </ul>-->
-            <!-- Dropdown End -->
-          </li>
+<!--            &lt;!&ndash; Dropdown Start &ndash;&gt;-->
+<!--&lt;!&ndash;            <ul class="a" :class="{ 'tc': dropdown }">&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--            &lt;!&ndash; Dropdown End &ndash;&gt;-->
+<!--          </li>-->
           <li><a href="index.html#support" class="xl">Support</a></li>
         </ul>
       </nav>
@@ -442,7 +444,7 @@
       <!-- ===== Services End ===== -->
 
       <!-- ===== Pricing Table Start ===== -->
-      <section x-data="setup()" class="i pg fh rm ji gp uq">
+      <section x-data="setup()" class="i pg fh rm ji gp uq" id="harga">>
         <!-- Bg Shapes -->
         <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
         <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
@@ -523,7 +525,7 @@
       <!-- ===== Pricing Table End ===== -->
 
       <!-- ===== Projects Start ===== -->
-      <section class="pg pj vp mr oj wp nr">
+      <section class="pg pj vp mr oj wp nr" id="portofolio">
         <!-- Section Title Start -->
         <div
           x-data="{ sectionTitle: `Vastech solusi terbaik dalam mengembangkan bisnis anda.`, sectionTitleText: ``}"
