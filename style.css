@@ -1998,8 +1998,97 @@ h1,  h2,  h3,  h4,  h5,  h6{
   border-color: rgb(78 107 255 / var(--tw-border-opacity));
 }
 
-@media (min-width: 768px){
+/* Wrapper dropdown */
+.dropdown {
+  position: relative;
+}
 
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  gap: 10px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Optional styling for links */
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.5s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content ;
+}
+
+.dropdown-menu a:hover {
+  background: #c9c9c9;
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdown-option p {
+  padding-right: 1vw;
+}
+.dropdown-menu-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.b .dropdown-menu {
+  background: rgb(24, 28, 49); /* dark background */
+  border-color: rgb(60, 69, 86); /* darker border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sedikit lebih gelap */
+}
+
+.b .dropdown-menu a {
+  color: inherit; /* warisan warna teks dari tema gelap */
+}
+
+.b .dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.1); /* hover efek lembut di dark mode */
+}
+
+@media (min-width: 320px){
+  .dropdown-menu-img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 425px){
+  .dropdown-menu-img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 768px){
+  .dropdown-menu {
+    display: none;
+    grid-template-columns: repeat(2, minmax(15vw, 1fr));
+  }
+  .dropdown:hover .dropdown-menu {
+    display: grid;
+  }
   .en{
     margin-top: 1.25rem;
   }
@@ -2132,7 +2221,13 @@ h1,  h2,  h3,  h4,  h5,  h6{
 }
 
 @media (min-width: 1024px){
-
+  .dropdown-menu {
+    display: none;
+    grid-template-columns: repeat(2, minmax(15vw, 1fr));
+  }
+  .dropdown:hover .dropdown-menu {
+    display: grid;
+  }
   .ho{
     visibility: visible;
   }
@@ -2349,7 +2444,13 @@ h1,  h2,  h3,  h4,  h5,  h6{
 }
 
 @media (min-width: 1280px){
-
+  .dropdown-menu {
+    display: none;
+    grid-template-columns: repeat(2, minmax(12vw, 1fr));
+  }
+  .dropdown:hover .dropdown-menu {
+    display: grid;
+  }
   .bq{
     margin-top: 5rem;
   }
@@ -2533,7 +2634,13 @@ h1,  h2,  h3,  h4,  h5,  h6{
 }
 
 @media (min-width: 1536px){
-
+  .dropdown-menu {
+    display: none;
+    grid-template-columns: repeat(2, minmax(15vw, 1fr));
+  }
+  .dropdown:hover .dropdown-menu {
+    display: grid;
+  }
   .\32xl\:ud-block{
     display: block;
   }

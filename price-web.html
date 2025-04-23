@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vastech</title>
+        <link rel="icon" href="favicon.ico">
+        <link href="style.css" rel="stylesheet">
+        <link href="price.css" rel="stylesheet">
+    </head>
+      <body
+        x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+        x-init="
+             darkMode = JSON.parse(localStorage.getItem('darkMode'));
+             $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+        :class="{'b eh': darkMode === true}"
+      >
+    <!-- ===== Header ===== -->
+    <div id="header-placeholder"></div>
+    <!-- ===== Header ===== -->
+
+
+    <!-- ===== Services Start ===== -->
+    <section class="price-section lj tp kr">
+        <!-- Section Title Start -->
+        <div x-data="{ sectionTitle: `Kami akan mengedepankan pelayanan terbaik untuk anda`, sectionTitleText: ``}">
+          <div class="animate_top bb ze rj ki xn vq">
+              <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b"></h2>
+              <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+          </div>
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ze ki xn yq mb en">
+          <div class="wc qf pn xo ng">
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-04.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Timeline Management</h4>
+              <p>Kami selalu berkerja menggunakan timeline yang telah disepakati</p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Tampilan yang rapi</h4>
+              <p>Kami akan selalu berusaha agar tampilan yang digunakan mudah di pahami</p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Diskusi</h4>
+              <p>Kami akan selalu mendiskusikan project yang kami buat secara berkala</p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-07.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Ketepatan waktu</h4>
+              <p>Kami akan selalu memastikan project dalam selesai dengan waktu yang telah di sepakati</p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Kustomisasi</h4>
+              <p>Layanan kami juga dapat melakukan kustomisasi sesuai dengan kebutuhan anda</p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">pembaharuan</h4>
+              <p>Layanan kami akan melakukan update secara berkala guna melakukan optimasi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Services End ===== -->
+
+      <!-- ===== Projects Start ===== -->
+       <!-- Project Item -->
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Vastech, partner terpercaya dalam pembuatan website sejak awal`, sectionTitleText: ``}">
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
+            </h2>
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+          </div>
+        </div>
+        <!-- Section Title End -->
+        <div class="projects-section">
+          <div class="project-item animate_right  fb vd jn/2 to/3 branding">
+            <div class="c i pg sg z-1">
+              <img src="images/web-01.png" alt="Project" />
+
+              <div 
+                class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
+              >
+                <h4 class="ek tj kk hc">Website Tamijaya</h4>
+                <p>Tamijaya</p>
+                <a
+                  class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                  href="http://tamijaya.com"
+                >
+                  <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project Item -->
+          <div class="project-item animate_right  fb vd jn/2 to/3 branding">
+            <div class="c i pg sg z-1">
+              <img src="images/web-02.png" alt="Project" />
+
+              <div
+                class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
+              >
+                <h4 class="ek tj kk hc">Smesticon RAB</h4>
+                <p>Aplikasi Konstruksi</p>
+                <a
+                  class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                  href="https://rabdev.livevcp.online"
+                >
+                  <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Item -->
+          <div class="project-item animate_right  fb vd jn/2 to/3 branding">
+            <div class="c i pg sg z-1">
+              <img src="images/web-03.png" alt="Project" />
+
+              <div
+                      class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
+              >
+                <h4 class="ek tj kk hc">Vastu Cipta Persada</h4>
+                <p>Website PT VCP</p>
+                <a
+                        class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                        href="http://vastucipta.livevcp.online"
+                >
+                  <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- ===== Projects End ===== -->
+
+       <!-- ===== Pricing Table Start ===== -->
+      <section x-data="setup()" class="i pg fh rm ji gp uq" id="harga">>
+        <!-- Bg Shapes -->
+        <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
+        <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
+        <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
+        <img src="images/shape-12.svg" alt="Shape" class="h p s" />
+        <img src="images/shape-13.svg" alt="Shape" class="h r q" />
+
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Kami menawarkan harga yang terbaik untuk anda.`, sectionTitleText: ``}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+    <h2
+            x-text="sectionTitle"
+            class="fk vj pr kk wm on/5 gq/2 bb _b"
+    >
+    </h2>
+    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+</div>
+
+
+        </div>
+        <!-- Section Title End -->
+
+        <!-- Pricing switcher -->
+        <div class="tc wf xf jb og">
+          <span class="ek kk wm">Bulanan</span>
+          <button class="i rg gm" x-cloak @click="billPlan == 'monthly' ? billPlan = 'annually' : billPlan = 'monthly'">
+            <div class="fe id bl gh rg xk outline-none"></div>
+            <div
+              class="h vc wf xf ge jd cl jl ml mf hh rg yk ea fa"
+              :class="{ 'ff': billPlan == 'monthly', 'gf': billPlan == 'annually' }"
+            ></div>
+          </button>
+          <span class="ek kk wm">Tahunan</span>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="bb ze i va ki xn yq bc">
+          <div class="wc qf pn xo jg">
+            <template x-for="(plan, i) in plans" x-key="i">
+              <!-- Pricing Item -->
+              <div class="animate_top rj sg hh sm vk xm hi nj oj">
+                <h4 x-text="plan.name" class="wj kk wm fb"></h4>
+
+                <div class="tc wf xf kg cc">
+                  <h2
+                    :class="plan.name == 'Basic' ? 'text-green-500' : ''"
+                    x-text="`Rp ${billPlan == 'monthly' ? plan.price.monthly : plan.price.annually}`"
+                    class="fk _j kk wm"
+                  ></h2>
+                  <span x-text="billPlan == 'monthly' ? 'juta /per month' : 'juta /per year'" class="sc ak kk wm"></span>
+                </div>
+
+                <p class="ur dc">*Syarat dan Ketentuan Berlaku</p>
+
+                <!-- Button -->
+                <a
+                  href="#"
+                  class="ek rg lk ml il gi ri"
+                  :class="plan.name == 'Growth Plan' ? 'gh sl' : 'mh tl'"
+                >
+                  Try for free
+                </a>
+
+                <!-- Features -->
+                <ul class="tc sf bg ob fb">
+                  <template x-for="(feature, i) in plan.features" x-key="i">
+                    <li x-text="feature"></li>
+                  </template>
+                </ul>
+
+              </div>
+            </template>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Pricing Table End ===== -->
+    <script defer src="bundle.js"></script>
+    <script>
+      //  Pricing Table
+      const setup = () => {
+        return {
+          isNavOpen: false,
+
+          billPlan: 'monthly',
+
+          plans: [
+            {
+              name: 'Lite',
+              price: {
+                monthly: 5,
+                annually: 5 * 12 - 5,
+              },
+              features: ['Free domain .com/ac.id','Penyimpanan kapasitas 50 GB SSD','Kustomisasi 3 modul', 'Free revisi 3x'],
+            },
+            {
+              name: 'Premium',
+              price: {
+                monthly: 10,
+                annually: 10 * 12 - 10,
+              },
+              features: ['Free domain .com/ac.id','Penyimpanan kapasitas 200 GB SSD','Kustomisasi 5 modul', 'Free revisi 3x'],
+            },
+            {
+              name: 'Business',
+              price: {
+                monthly: 25,
+                annually: 25 * 12 - 15,
+              },
+              features: ['Free domain .com/ac.id','Penyimpanan kapasitas 300 GB SSD','Kustomisasi 7 modul', 'Free revisi 3x'],
+            },
+          ],
+        };
+      };
+    </script>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

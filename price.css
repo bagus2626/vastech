@@ -1,0 +1,22 @@
+.price-section {
+  padding-top: 20vw;
+}
+.projects-section {
+  display: flex;
+  flex-direction: column;
+}
+.project-item {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+@media (min-width: 768px) {
+    .projects-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .project-item {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}
