@@ -2115,6 +2115,12 @@ h1,  h2,  h3,  h4,  h5,  h6{
   height: auto;
 }
 
+.partner-img {
+  width: auto;
+  height: 7vw;
+  border-radius: 1vw;
+}
+
 @media (min-width: 320px){
   .dropdown-menu-img {
     width: 20px;
