@@ -202,7 +202,7 @@
 
         <!-- Pricing Table -->
         <div class="bb ze i va ki xn yq bc">
-          <div class="wc qf pn xo jg">
+          <div class="wc qf pnn xox jg">
             <template x-for="(plan, i) in plans" x-key="i">
               <!-- Pricing Item -->
               <div class="animate_top rj sg hh sm vk xm hi nj oj">
@@ -246,7 +246,7 @@
       <div id="footer-placeholder"></div>
       <!-- ===== Footer ===== -->
 
-      
+
     <script defer src="bundle.js"></script>
     <script>
       //  Pricing Table
@@ -275,6 +275,14 @@
             },
             {
               name: 'Business',
+              price: {
+                monthly: 25,
+                annually: 25 * 12 - 15,
+              },
+              features: ['Free domain .com/ac.id','Penyimpanan kapasitas 300 GB SSD','Kustomisasi 7 modul', 'Free revisi 3x'],
+            },
+            {
+              name: 'Custom',
               price: {
                 monthly: 25,
                 annually: 25 * 12 - 15,

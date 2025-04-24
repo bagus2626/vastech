@@ -601,6 +601,28 @@ h1,  h2,  h3,  h4,  h5,  h6{
     width: 33.333333%;
   }
 }
+
+.header-picture{
+  top: -280px;
+  right: -120px;
+}
+
+.about-picture-1 {
+  height: fit-content;
+  width: 100vw;
+}
+
+.about-picture-2 {
+  height: fit-content;
+  width: 60vw;
+}
+.gray-scale-img {
+  filter: grayscale(0%);
+}
+.b .gray-scale-img {
+  filter: grayscale(100%);
+}
+
 .d{
   visibility: visible !important;
 }
@@ -738,6 +760,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
 }
 .sa{
   bottom: 2rem;
+}
+.sat {
+  bottom: 6rem;
 }
 .ta{
   right: 2rem;
@@ -1019,6 +1044,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
 }
 .zd\/2{
   width: 50%;
+}
+.zdm {
+  width: 25%;
 }
 ._d{
   width: -moz-fit-content;
@@ -2068,6 +2096,25 @@ h1,  h2,  h3,  h4,  h5,  h6{
   background: rgba(255, 255, 255, 0.1); /* hover efek lembut di dark mode */
 }
 
+.footer-icon svg {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.footer-icon:hover svg {
+  fill: #4E6BFF; /* warna biru keunguan (SlateBlue) */
+}
+
+.testimonial-img {
+  width: 10%;
+  height: auto;
+  border-radius: 1vw;
+}
+.testimonial-brand {
+  width: 6vw;
+  height: auto;
+}
+
 @media (min-width: 320px){
   .dropdown-menu-img {
     width: 20px;
@@ -2080,6 +2127,10 @@ h1,  h2,  h3,  h4,  h5,  h6{
     width: 24px;
     height: 24px;
   }
+
+  .zdm {
+    width: 20%;
+  }
 }
 @media (min-width: 768px){
   .dropdown-menu {
@@ -2089,8 +2140,16 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .dropdown:hover .dropdown-menu {
     display: grid;
   }
+  .testimonial-brand {
+    width: 3vw;
+    height: auto;
+  }
   .en{
     margin-top: 1.25rem;
+  }
+
+  .zdm {
+    width: 13%;
   }
 
   .fn{
@@ -2295,7 +2354,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .to\/4{
     width: 25%;
   }
-
+  .tom {
+    width: 10%;
+  }
   .wo\/4{
     width: 75%;
   }
@@ -2306,6 +2367,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
 
   .xo{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .xox{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .yo{
@@ -2440,6 +2504,16 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .aq{
     font-size: 19px;
     line-height: 35px;
+  }
+
+  .pnn{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1184px){
+  .pnn{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -2633,6 +2707,11 @@ h1,  h2,  h3,  h4,  h5,  h6{
   }
 }
 
+@media (min-width: 1290px){
+  .pnn{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 @media (min-width: 1536px){
   .dropdown-menu {
     display: none;

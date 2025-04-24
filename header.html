@@ -7,8 +7,8 @@
     <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
         <div class="vd to/4 tc wf yf">
         <a href="index.html">
-            <img class="om" src="images/vastech.svg" style="width: 50px; height: 50px;" alt="Logo Light" />
-            <img class="xc nm" src="images/vastech.svg" style="background-color: white; width: 50px; width: 50px;" alt="Logo Dark" />
+            <img class="om" src="images/vastech-black.svg" style="width: 50px; height: 50px;" alt="Logo Light" />
+            <img class="xc nm" src="images/vastech-white.svg" style="width: 50px; width: 50px;" alt="Logo Dark" />
         </a>
 
         <!-- Hamburger Toggle BTN -->
@@ -38,27 +38,51 @@
             <li><a href="index.html#features" class="xl">Fitur</a></li>
             <li><a href="index.html#portofolio" class="xl">Portofolio</a></li>
             <li class="dropdown">
-                <a href="index.html#harga" class="xl">Harga</a>
+                <a href="#" class="xl">Harga</a>
                 <div class="dropdown-menu">
-                <a href="./price-web.html">
-                    <img class="dropdown-menu-img" src="icons/icons8-web-96.png" alt="web-icon">
-                    <p>Web</p>
+                    <a href="./price-web.html">
+                        <img class="dropdown-menu-img" src="icons/icons8-web-96.png" alt="web-icon">
+                        <p>Web</p>
+                    </a>
+                    <a class="dropdown-option" href="#mobile">
+                        <img class="dropdown-menu-img" src="icons\icons8-mobile-96.png" alt="mobile-icon">
+                        <p>Mobile</p>
+                    </a>
+                    <a href="#uiux">
+                        <img class="dropdown-menu-img" src="icons/icons8-ticket-96.png" alt="booking-icon">
+                        <p>Booking App</p>
+                    </a>
+                    <a href="#ecommerce">
+                        <img class="dropdown-menu-img" src="icons\icons8-fast-cart-96.png" alt="commerce-icon">
+                        <p>E-Commerce</p>
+                    </a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="xl">Support</a>
+                <div class="dropdown-menu">
+                <a href="https://wa.me/6285183258575?text=Hi%20Vastech!%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20produk%20digital%20yang%20ditawarkan"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="dropdown-menu-img" src="icons/icons8-whatsapp-96.png" alt="web-icon">
+                    <p>Watsapp</p>
                 </a>
-                <a class="dropdown-option" href="#mobile">
-                    <img class="dropdown-menu-img" src="icons\icons8-mobile-96.png" alt="mobile-icon">
-                    <p>Mobile</p>
+                <a class="dropdown-option" href="https://www.instagram.com/vastech_id/" target="_blank" rel="noopener noreferrer">
+                    <img class="dropdown-menu-img" src="icons/icons8-instagram-96.png" alt="mobile-icon">
+                    <p>Instagram</p>
                 </a>
-                <a href="#uiux">
-                    <img class="dropdown-menu-img" src="icons/icons8-ticket-96.png" alt="booking-icon">
-                    <p>Booking App</p>
+                <a href="https://www.linkedin.com/posts/vastech.dev_webdevelopment-softwarecompany-techinnovation-activity-7320650860521304064-aZI8?utm_source=share&utm_medium=member_ios&rcm=ACoAACQcU4UBV3ZbgcZzIloAbMQ-f3n9UKoq344"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="dropdown-menu-img" src="icons/icons8-linkedin-96.png" alt="booking-icon">
+                    <p>LinkedIn</p>
                 </a>
-                <a href="#ecommerce">
-                    <img class="dropdown-menu-img" src="icons\icons8-fast-cart-96.png" alt="commerce-icon">
-                    <p>E-Commerce</p>
+                <a href="#ecommerce" target="_blank" rel="noopener noreferrer" onclick="sendEmail()">
+                    <img class="dropdown-menu-img" src="icons/icons8-email-96.png" alt="commerce-icon">
+                    <p>E-Mail</p>
                 </a>
                 </div>
             </li>
-            <li><a href="index.html#support" class="xl">Support</a></li>
             </ul>
         </nav>
 
@@ -82,3 +106,23 @@
     </div>
     </header>
 <!-- ===== Header End ===== -->
+ 
+<script>//send email function
+    function sendEmail() {
+      var fullname = '';
+      var email = '';
+      var phone = '';
+      var subject = 'Tanya tentang produk digital Vastech';
+      var message = 'Halo Vastech, saya ingin menanyakan tentang produk digital yang ditawarkan.';
+  
+      var mailtoLink = 'mailto:development.vastech@gmail.com?subject=' + encodeURIComponent(subject) +
+                       '&body=' + encodeURIComponent(
+                         'Nama Lengkap: ' + fullname + '\n' +
+                         'Email: ' + email + '\n' +
+                         'No Telepon: ' + phone + '\n' +
+                         'Pesan: ' + message
+                       );
+      
+      window.location.href = mailtoLink;
+    }
+  </script>
