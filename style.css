@@ -2037,7 +2037,7 @@ h1,  h2,  h3,  h4,  h5,  h6{
 .dropdown-menu {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   top: 100%;
   left: 0;
   background: white;
@@ -2154,7 +2154,7 @@ h1,  h2,  h3,  h4,  h5,  h6{
     grid-template-columns: repeat(2, minmax(15vw, 1fr));
   }
   .dropdown:hover .dropdown-menu {
-    display: grid;
+    display: flex;
   }
   .testimonial-brand {
     width: 3vw;
@@ -2301,6 +2301,7 @@ h1,  h2,  h3,  h4,  h5,  h6{
 @media (min-width: 1024px){
   .dropdown-menu {
     display: none;
+    position: absolute;
     grid-template-columns: repeat(2, minmax(15vw, 1fr));
   }
   .dropdown:hover .dropdown-menu {
