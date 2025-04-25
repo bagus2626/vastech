@@ -9,6 +9,12 @@
     padding-left: 15vw;
     padding-right: 15vw;
 }
+.plan-lite-text {
+    color: rgb(51, 123, 51);
+}
+.b .plan-lite-text {
+    color: rgb(51, 123, 51);
+}
 
 @media (min-width: 768px) {
     .projects-section {

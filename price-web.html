@@ -105,6 +105,8 @@
                 <a
                   class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                   href="http://tamijaya.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
@@ -128,6 +130,8 @@
                 <a
                   class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                   href="https://rabdev.livevcp.online"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
@@ -148,8 +152,10 @@
                 <h4 class="ek tj kk hc">Vastu Cipta Persada</h4>
                 <p>Website PT VCP</p>
                 <a
-                        class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                        href="http://vastucipta.livevcp.online"
+                  class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                  href="http://vastucipta.livevcp.online"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
@@ -210,9 +216,9 @@
 
                 <div class="tc wf xf kg cc">
                   <h2
-                    :class="plan.name == 'Basic' ? 'text-green-500' : ''"
+                    :class="plan.name == 'Lite' ? 'plan-lite-text' : ''"
                     x-text="`Rp ${billPlan == 'monthly' ? plan.price.monthly : plan.price.annually}`"
-                    class="fk _j kk wm"
+                    class="fk _jj _j kk wm"
                   ></h2>
                   <span x-text="billPlan == 'monthly' ? 'juta /per month' : 'juta /per year'" class="sc ak kk wm"></span>
                 </div>
@@ -221,11 +227,13 @@
 
                 <!-- Button -->
                 <a
-                  href="#"
-                  class="ek rg lk ml il gi ri"
+                  :href="plan.link"
+                  class="ek rg lk ml il gi rir"
                   :class="plan.name == 'Growth Plan' ? 'gh sl' : 'mh tl'"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Try for free
+                  Coba Sekarang
                 </a>
 
                 <!-- Features -->
@@ -264,6 +272,7 @@
                 annually: 5 * 12 - 5,
               },
               features: ['Free domain .com/ac.id','Penyimpanan kapasitas 50 GB SSD','Kustomisasi 3 modul', 'Free revisi 3x'],
+              link: 'https://wa.me/6285183258575?text=Hi%20Vastech!%20Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20paket%20pembuatan%20*Web%20Lite*%20yang%20ditawarkan',
             },
             {
               name: 'Premium',
@@ -272,6 +281,7 @@
                 annually: 10 * 12 - 10,
               },
               features: ['Free domain .com/ac.id','Penyimpanan kapasitas 200 GB SSD','Kustomisasi 5 modul', 'Free revisi 3x'],
+              link: 'https://wa.me/6285183258575?text=Hi%20Vastech!%20Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20paket%20pembuatan%20*Web%20Premium*%20yang%20ditawarkan',
             },
             {
               name: 'Business',
@@ -280,6 +290,7 @@
                 annually: 25 * 12 - 15,
               },
               features: ['Free domain .com/ac.id','Penyimpanan kapasitas 300 GB SSD','Kustomisasi 7 modul', 'Free revisi 3x'],
+              link: 'https://wa.me/6285183258575?text=Hi%20Vastech!%20Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20paket%20pembuatan%20*Web%20Business*%20yang%20ditawarkan',
             },
             {
               name: 'Custom',
@@ -288,6 +299,7 @@
                 annually: 25 * 12 - 15,
               },
               features: ['Free domain .com/ac.id','Penyimpanan kapasitas 300 GB SSD','Kustomisasi 7 modul', 'Free revisi 3x'],
+              link: 'https://wa.me/6285183258575?text=Hi%20Vastech!%20Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20paket%20pembuatan%20*Web%20Custom*%20yang%20ditawarkan',
             },
           ],
         };

@@ -623,6 +623,7 @@ h1,  h2,  h3,  h4,  h5,  h6{
   filter: grayscale(100%);
 }
 
+
 .d{
   visibility: visible !important;
 }
@@ -1500,6 +1501,10 @@ h1,  h2,  h3,  h4,  h5,  h6{
   padding-left: 3.25rem;
   padding-right: 3.25rem;
 }
+.rir{
+  padding-left: 2rem;
+  padding-right: 2rem;
+} 
 .si{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2309,6 +2314,10 @@ h1,  h2,  h3,  h4,  h5,  h6{
   }
   .partner-img {
     height: 7vw;
+  }
+  ._jj {
+    font-size: 30px;
+    line-height: 42px;
   }
   .ho{
     visibility: visible;
