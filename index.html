@@ -40,7 +40,7 @@
               </p>
 
               <div class="tc tf yo zf mb">
-                <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l"
+                <a href="#" onclick="sendEmail()" class="ek jk lk gh gi hi rg ml il vc _d _l"
                   >Mulai</a
                 >
 
@@ -906,11 +906,11 @@
     </script>
     <script>//send email function
       function sendEmail() {
-        var fullname = document.getElementById('fullname').value;
+        var fullname = document.getElementById('fullname').value || 'Customer';
         var email = document.getElementById('email').value;
         var phone = document.getElementById('phone').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
+        var subject = document.getElementById('subject').value || 'Customer Question:';
+        var message = document.getElementById('message').value || 'Hi Vastech! Ada yang ingin saya tanyakan.';
     
         var mailtoLink = 'mailto:development.vastech@gmail.com?subject=' + encodeURIComponent(subject) +
                          '&body=' + encodeURIComponent(
