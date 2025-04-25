@@ -1241,6 +1241,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
 .zf{
   gap: 1.875rem;
 }
+.zff{
+  gap: 5rem;
+}
 ._f{
   gap: 1.75rem;
 }
@@ -2121,7 +2124,7 @@ h1,  h2,  h3,  h4,  h5,  h6{
 
 .partner-img {
   width: auto;
-  height: 7vw;
+  height: 14vw;
   border-radius: 1vw;
 }
 
@@ -2136,6 +2139,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .dropdown-menu-img {
     width: 24px;
     height: 24px;
+  }
+  .partner-img {
+    height: 10vw;
   }
 
   .zdm {
@@ -2153,6 +2159,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .testimonial-brand {
     width: 3vw;
     height: auto;
+  }
+  .partner-img {
+    height: 10vw;
   }
   .en{
     margin-top: 1.25rem;
@@ -2297,6 +2306,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .dropdown:hover .dropdown-menu {
     display: grid;
   }
+  .partner-img {
+    height: 7vw;
+  }
   .ho{
     visibility: visible;
   }
@@ -2404,6 +2416,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
 
   .cp{
     gap: 3.125rem;
+  }
+  .cpn{
+    gap: 1rem;
   }
 
   .dp{
@@ -2730,6 +2745,12 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .dropdown:hover .dropdown-menu {
     display: grid;
   }
+  .partner-img {
+    height: 7vw;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+  } 
   .\32xl\:ud-block{
     display: block;
   }
