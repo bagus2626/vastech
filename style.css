@@ -2144,6 +2144,9 @@ h1,  h2,  h3,  h4,  h5,  h6{
     width: 20px;
     height: 20px;
   }
+  .showOnTablet {
+    display: none;
+  }
 }
 
 @media (min-width: 425px){
