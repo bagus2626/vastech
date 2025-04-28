@@ -2133,6 +2133,12 @@ h1,  h2,  h3,  h4,  h5,  h6{
   border-radius: 1vw;
 }
 
+.hideOnTablet {
+  display: block;
+}
+.showOnTablet {
+  display: none;
+}
 @media (min-width: 320px){
   .dropdown-menu-img {
     width: 20px;
@@ -2152,6 +2158,17 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .zdm {
     width: 20%;
   }
+
+  .wt\/2{
+    width: 50%;
+    display: flex;
+  }
+  .hideOnTablet {
+    display: none;
+  }
+  .showOnTablet {
+    display: flex;
+  }
 }
 @media (min-width: 768px){
   .dropdown-menu {
@@ -2167,6 +2184,12 @@ h1,  h2,  h3,  h4,  h5,  h6{
   }
   .partner-img {
     height: 10vw;
+  }
+  .hideOnTablet {
+    display: block;
+  }
+  .showOnTablet {
+    display: none;
   }
   .en{
     margin-top: 1.25rem;
